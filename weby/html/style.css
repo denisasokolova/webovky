@@ -1,0 +1,114 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- Základní styly --- */
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ECF0F1; 
+    color: #2C3E50; 
+}
+
+/* --- Hlavička a Zápatí --- */
+header, footer {
+    background-color: #2C3E50 !important; 
+    color: white !important;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+.nav-link:hover, .nav-link.active {
+    color: #3498DB !important; /* Akcentní modř */
+}
+h2, h3, .card-title {
+    color: #2C3E50;
+    font-weight: 600; 
+}
+a {
+    color: #3498DB;
+    text-decoration: none; /* Odstraní podtržení u odkazů */
+    transition: color 0.2s;
+}
+a:hover {
+    color: #2980b9;
+}
+.text-white-50 { 
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* --- Tlačítka --- */
+.btn-primary {
+    background-color: #3498DB; 
+    border-color: #3498DB;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+}
+.btn-primary:hover {
+    background-color: #2980b9; 
+    border-color: #2980b9;
+    transform: translateY(-1px); 
+}
+
+/* --- Karty a Ikony --- */
+.card {
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Hluboký profesionální stín */
+    transition: transform 0.3s;
+    border-radius: 12px; /* Zaoblené rohy */
+    color: #2C3E50; 
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.ikona {
+    font-size: 2.8em; 
+    color: #3498DB; 
+    margin-bottom: 15px;
+}
+.logo-obrazek {
+    height: 50px;
+}
+
+/* --- Banner a pozadí --- */
+.banner {
+    background: url('banner-keramika.jpg') no-repeat center center/cover;
+    height: 60vh;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 62, 80, 0.6); /* Tmavá modř s průhledností */
+    z-index: 1;
+}
+
+/* --- Formuláře a Tabulky --- */
+.form-control {
+    border-color: #2C3E50;
+}
+.form-control:focus {
+    border-color: #3498DB;
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25); 
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: rgba(44, 62, 80, 0.05);
+}
+.galerie-img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.galerie-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
