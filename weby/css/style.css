@@ -1,38 +1,38 @@
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
 /* --- Základní styly --- */
 body {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     background-color: #ECF0F1; 
     color: #2C3E50; 
 }
 
 /* --- Hlavička a Zápatí --- */
-header, footer {
+header {
     background-color: #2C3E50 !important; 
     color: white !important;
 }
+footer, footer * {
+    background-color: #2C3E50 !important;
+}
+
 .navbar-brand, .nav-link {
     color: white !important;
     font-weight: 500;
 }
 .nav-link:hover, .nav-link.active {
-    color: #3498DB !important; /* Akcentní modř */
+    color: #5a95bd !important; 
 }
 h2, h3, .card-title {
     color: #2C3E50;
     font-weight: 600; 
 }
 a {
-    color: #3498DB;
+    color: #5a95bd;
     text-decoration: none; /* Odstraní podtržení u odkazů */
     transition: color 0.2s;
 }
 a:hover {
-    color: #2980b9;
+    color: #5a95bd;
 }
 .text-white-50 { 
     color: rgba(255, 255, 255, 0.6) !important;
@@ -40,22 +40,22 @@ a:hover {
 
 /* --- Tlačítka --- */
 .btn-primary {
-    background-color: #3498DB; 
-    border-color: #3498DB;
+    background-color: #5a95bd; 
+    border-color: #5a95bd;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     transition: background-color 0.3s, transform 0.1s;
 }
 .btn-primary:hover {
-    background-color: #2980b9; 
-    border-color: #2980b9;
+    background-color: #5a95bd; 
+    border-color: #5a95bd;
     transform: translateY(-1px); 
 }
 
 /* --- Karty a Ikony --- */
 .card {
     border: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Hluboký profesionální stín */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); 
     transition: transform 0.3s;
     border-radius: 12px; /* Zaoblené rohy */
     color: #2C3E50; 
@@ -65,7 +65,7 @@ a:hover {
 }
 .ikona {
     font-size: 2.8em; 
-    color: #3498DB; 
+    color: #5a95bd; 
     margin-bottom: 15px;
 }
 .logo-obrazek {
@@ -86,7 +86,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(44, 62, 80, 0.6); /* Tmavá modř s průhledností */
+    background: rgba(44, 62, 80, 0.6); 
     z-index: 1;
 }
 
@@ -95,7 +95,7 @@ a:hover {
     border-color: #2C3E50;
 }
 .form-control:focus {
-    border-color: #3498DB;
+    border-color: #5a95bd;
     box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25); 
 }
 .table-striped > tbody > tr:nth-of-type(odd) > * {
